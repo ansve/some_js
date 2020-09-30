@@ -15,44 +15,35 @@
 
 	<div id="soTest" class="soTest">
 
-        <h1>Курс валют</h1>
+        <h1>Курсы валют</h1>
 
     <form class="changeCurrency" id="changeCurrency" action="">
 
-        <p>Выберите валюту</p>
+        <p>Введите валюту:</p>
 
-            <select name="currencyList" id="currencyList" autofocus>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="RUB">RUB</option>
-                <option value="GBP">GBP</option>
-            </select>
-            <button type="submit" name="change">выбрать</button>
+            <p><input id="currencyName" type="text" maxlength="3" placeholder="USD" autofocus></p>
+            <p><button>Сбросить</button></p>
         
     </form>
     
     <hr />
      
     
-        <div class="flex-container">
-            <div class="soflex-inner">
-                <div class="table-header">Валюта</div>
-                <div>???</div>
-            </div>
-            <div class="soflex-inner">
-                <div class="table-header">Курс</div>
-                <div>???</div>
-            </div>
-            <div class="soflex-inner">
-                <div class="table-header">Дата</div>
-                <div>???</div>
-            </div>
+        <div class="table-wrrap">
+            <table id="currencyTable">
+               <thead>
+                <tr><th>Валюта</th><th>Имя валюты</th><th>Курс</th><th>Дата торгов</th></tr>
+               </thead> 
+               <tbody></tbody>
+                
+            </table>
         </div>
     </div>
      
 </div>
 
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" 
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>

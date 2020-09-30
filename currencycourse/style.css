@@ -13,19 +13,32 @@
     margin: 0 auto;
 }
 
-.flex-container div div {
-    border: 1px solid #a9a6a3;
-    padding: 3px;
+input {
+    width: 35px;
+    border: 2px solid rgb(29, 107, 223);
+    border-radius: 15%;
+    box-shadow: 0px 0px 12px 5px rgba(0, 0, 255, .2);
+    text-align: center;
+    color: rgb(228, 62, 62);
 }
- 
- 
-.flex-container {
-    /* flex-direction: column; */
-    display: flex;
-    justify-content: center;
-}
- 
-.soflex-inner {
-    flex-grow: 0.2;
 
+.table-wrrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    min-width: 500px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid gray;
+    background: #cccaca;
+}
+
+td {
+    border: 1px solid gray;
 }
